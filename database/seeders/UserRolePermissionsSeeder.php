@@ -16,6 +16,9 @@ class UserRolePermissionsSeeder extends Seeder
      */
     public function run()
     {
+
+        if (empty($user=User::first())){
+
         // ---------------------- Developer
         $developer=User::create([
             'name'=>'Md.Saiful Islam',
@@ -70,5 +73,6 @@ class UserRolePermissionsSeeder extends Seeder
             'name'=>'general-customer'
         ]);
         $user->assignRole([$customerRole->id]);
+        }
     }
 }

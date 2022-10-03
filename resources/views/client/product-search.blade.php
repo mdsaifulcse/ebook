@@ -92,7 +92,7 @@
                                         @endforelse
                                     </div>
                                     <div class="product-image-container">
-                                        <a href="{{url('/products/details/'.$product->id."/$product->name")}}" title="{{$product->name}}">
+                                        <a href="{{url('/book/details/'.$product->id."/$product->name")}}" title="{{$product->name}}">
                                             <img src="{{asset($product->productImages[0]->medium)}}" alt="{{$product->name}}" title="{{$product->name}}" class="img-responsive" id="product-image-{{$key}}" />
                                         </a>
                                     </div>
@@ -172,12 +172,12 @@
                                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
                                                     @endfor
                                                 </div>
-                                                <a class="rating-num"  href="{{url('/products/details/'.'101'.'/single-product-name')}}" rel="nofollow" target="_blank" >({{$averageReview}})</a>
+                                                <a class="rating-num"  href="{{url('/book/details/'.'101'.'/single-product-name')}}" rel="nofollow" target="_blank" >({{$averageReview}})</a>
                                             </div>
                                             {{--<div class="order-num">Orders (33)</div>--}}
                                         </div>
                                         <h4>
-                                            <a href="{{url('/products/details/'.$product->id.'/single-product-name')}}">
+                                            <a href="{{url('/book/details/'.$product->id.'/single-product-name')}}">
                                                 {{substr($product->name,0,25)}}
                                             </a>
                                         </h4>

@@ -202,9 +202,9 @@
                                                                         <?php
                                                                         if (strlen($featureProduct->name) != strlen(utf8_decode($featureProduct->name)))
                                                                         {
-                                                                            echo substr($featureProduct->name,0,65);
+                                                                            echo substr($featureProduct->name,0,120);
                                                                         }else{
-                                                                            echo substr($featureProduct->name,0,19);
+                                                                            echo substr($featureProduct->name,0,60);
                                                                         }
                                                                         ?>
                                                                     </a>
@@ -348,9 +348,9 @@
                                                                         <?php
                                                                         if (strlen($bongobondhoBangladeshCatBook->name) != strlen(utf8_decode($bongobondhoBangladeshCatBook->name)))
                                                                         {
-                                                                            echo substr($bongobondhoBangladeshCatBook->name,0,65);
+                                                                            echo substr($bongobondhoBangladeshCatBook->name,0,120);
                                                                         }else{
-                                                                            echo substr($bongobondhoBangladeshCatBook->name,0,16);
+                                                                            echo substr($bongobondhoBangladeshCatBook->name,0,60);
                                                                         }
                                                                         ?>
                                                                     </a>
@@ -502,9 +502,9 @@
                                                                         <?php
                                                                         if (strlen($bongobondhoPopularCatBook->name) != strlen(utf8_decode($bongobondhoPopularCatBook->name)))
                                                                         {
-                                                                            echo substr($bongobondhoPopularCatBook->name,0,65);
+                                                                            echo substr($bongobondhoPopularCatBook->name,0,120);
                                                                         }else{
-                                                                            echo substr($bongobondhoPopularCatBook->name,0,16);
+                                                                            echo substr($bongobondhoPopularCatBook->name,0,60);
                                                                         }
                                                                         ?>
                                                                     </a>
@@ -647,9 +647,9 @@
                                                                         <?php
                                                                         if (strlen($newProduct->name) != strlen(utf8_decode($newProduct->name)))
                                                                         {
-                                                                            echo substr($newProduct->name,0,65);
+                                                                            echo substr($newProduct->name,0,120);
                                                                         }else{
-                                                                            echo substr($newProduct->name,0,16);
+                                                                            echo substr($newProduct->name,0,60);
                                                                         }
                                                                         ?>
                                                                     </a>
@@ -783,9 +783,9 @@
                                                                         <?php
                                                                         if (strlen($StoriesNovelPoemsCatBook->name) != strlen(utf8_decode($StoriesNovelPoemsCatBook->name)))
                                                                         {
-                                                                            echo substr($StoriesNovelPoemsCatBook->name,0,65);
+                                                                            echo substr($StoriesNovelPoemsCatBook->name,0,120);
                                                                         }else{
-                                                                            echo substr($StoriesNovelPoemsCatBook->name,0,16);
+                                                                            echo substr($StoriesNovelPoemsCatBook->name,0,60);
                                                                         }
                                                                         ?>
                                                                     </a>
@@ -922,9 +922,9 @@
                                                                         <?php
                                                                         if (strlen($mostPopularProduct->name) != strlen(utf8_decode($mostPopularProduct->name)))
                                                                         {
-                                                                            echo substr($mostPopularProduct->name,0,65);
+                                                                            echo substr($mostPopularProduct->name,0,120);
                                                                         }else{
-                                                                            echo substr($mostPopularProduct->name,0,16);
+                                                                            echo substr($mostPopularProduct->name,0,60);
                                                                         }
                                                                         ?>
                                                                     </a>
@@ -1079,9 +1079,9 @@
                                                                         <?php
                                                                         if (strlen($topRatedProduct->name) != strlen(utf8_decode($topRatedProduct->name)))
                                                                         {
-                                                                            echo substr($topRatedProduct->name,0,65);
+                                                                            echo substr($topRatedProduct->name,0,120);
                                                                         }else{
-                                                                            echo substr($topRatedProduct->name,0,16);
+                                                                            echo substr($topRatedProduct->name,0,60);
                                                                         }
                                                                         ?>
                                                                     </a>
@@ -1222,9 +1222,9 @@
                                                                                 <?php
                                                                                 if (strlen($readingListProduct->name) != strlen(utf8_decode($readingListProduct->name)))
                                                                                 {
-                                                                                    echo substr($readingListProduct->name,0,65);
+                                                                                    echo substr($readingListProduct->name,0,120);
                                                                                 }else{
-                                                                                    echo substr($readingListProduct->name,0,16);
+                                                                                    echo substr($readingListProduct->name,0,60);
                                                                                 }
                                                                                 ?>
                                                                             </a>

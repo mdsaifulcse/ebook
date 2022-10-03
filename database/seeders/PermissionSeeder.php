@@ -98,10 +98,13 @@ class PermissionSeeder extends Seeder
         ];
 
 
+        if (empty(Permission::first())){
+
 
         foreach ($permissions as $permission) {
 
             Permission::create(['name' => $permission]);
+        }
         }
     }
 }

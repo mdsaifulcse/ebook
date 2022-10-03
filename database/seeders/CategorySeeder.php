@@ -117,7 +117,7 @@ class CategorySeeder extends Seeder
                 'created_by'=>1,
             ],
             [
-                'id'=>9,
+                'id'=>10,
                 'category_name'=>'Bestseller books',
                 'category_name_bn'=>'বেস্টসেলার বই',
                 'link'=>'bestseller-books',
@@ -128,7 +128,7 @@ class CategorySeeder extends Seeder
                 'created_by'=>1,
             ],
             [
-                'id'=>9,
+                'id'=>11,
                 'category_name'=>'In Stock Books',
                 'category_name_bn'=>'ইন স্টক বুকস',
                 'link'=>'in-stock',
@@ -140,7 +140,10 @@ class CategorySeeder extends Seeder
             ],
         ];
 
+        $category=Category::first();
 
-        Category::insert($categories);
+        if (empty($category)){
+            Category::insert($categories);
+        }
     }
 }

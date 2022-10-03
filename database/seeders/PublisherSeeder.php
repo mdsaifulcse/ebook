@@ -35,6 +35,9 @@ class PublisherSeeder extends Seeder
         ];
 
 
-        Publisher::insert($publishers);
+        if (empty(Publisher::first())){
+            Publisher::insert($publishers);
+        }
+
     }
 }

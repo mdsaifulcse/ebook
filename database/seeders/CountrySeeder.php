@@ -34,7 +34,8 @@ class CountrySeeder extends Seeder
             ],
         ];
 
-
-        Country::insert($countries);
+        if (empty(Country::first())){
+            Country::insert($countries);
+        };
     }
 }

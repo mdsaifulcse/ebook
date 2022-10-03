@@ -18,7 +18,8 @@
             </div>
             <ul class="breadcrumb">
                 <li><a href="{{URL::to('/')}}"><i class="fa fa-home"></i></a></li>
-                <li><a href="{{URL::to('/categories')}}">{{__('frontend.Category Name Bn')}}</a></li>
+                <li><a href="javascript:void(0)">{{__('frontend.Book')}}</a></li>
+                <li><a href="{{URL::to('/book/categories')}}">{{__('frontend.Category Name Bn')}}</a></li>
                 <li><a href="{{URL::to('book/category/'.$categoryData->id.'?ref='.$categoryData->category_name)}}">{{$categoryData->category_name}}-{{$categoryData->category_name_bn}}</a></li>
             </ul>
         </div>
@@ -153,7 +154,7 @@
                                         </div>
                                         <h4>
                                             <a href="{{url('/book/details/'.$product->id."/$product->name")}}">
-                                                {{substr($product->name,0,25)}}
+                                                {{substr($product->name,0,50)}}
                                             </a>
                                         </h4>
                                     </div>
@@ -245,7 +246,7 @@
                 $('.products-category .product-layout').attr('class', 'product-layout product-table col-xs-12');
                 localStorage.setItem('listview', 'table');
             })
-            if(localStorage.getItem('listview')== null) localStorage.setItem('listview', 'grid-3');
+            if(localStorage.getItem('listview')== null) localStorage.setItem('listview', 'grid-4');
 
             if (localStorage.getItem('listview') == 'table') {
                 $('#table-view').trigger('click');

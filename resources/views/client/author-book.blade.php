@@ -19,8 +19,8 @@
             </div>
             <ul class="breadcrumb">
                 <li><a href="{{URL::to('/')}}"><i class="fa fa-home"></i></a></li>
-                <li><a href="{{URL::to('/book')}}">{{__('frontend.Book')}}</a></li>
-                <li><a href="{{URL::to('/author')}}">{{__('frontend.Author')}}</a></li>
+                <li><a href="javascript:void(0)">{{__('frontend.Book')}}</a></li>
+                <li><a href="{{URL::to('/book/authors')}}">{{__('frontend.Author')}}</a></li>
                 <li><a href="{{URL::to('book/author/'.$authorData->id.'?ref='.$authorData->name)}}">{{$authorData->name}}</a></li>
             </ul>
         </div>
@@ -267,7 +267,7 @@
                 $('.products-category .product-layout').attr('class', 'product-layout product-table col-xs-12');
                 localStorage.setItem('listview', 'table');
             })
-            if(localStorage.getItem('listview')== null) localStorage.setItem('listview', 'grid-3');
+            if(localStorage.getItem('listview')== null) localStorage.setItem('listview', 'grid-4');
 
             if (localStorage.getItem('listview') == 'table') {
                 $('#table-view').trigger('click');

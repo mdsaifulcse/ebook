@@ -35,6 +35,7 @@ class LanguageSeeder extends Seeder
         ];
 
 
-        Language::insert($languages);
-    }
+        if (empty(Language::first())){
+            Language::insert($languages);
+        };    }
 }

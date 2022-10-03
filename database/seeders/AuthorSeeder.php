@@ -38,6 +38,10 @@ class AuthorSeeder extends Seeder
         ];
 
 
-        Author::insert($authors);
+        if (empty(Author::first())){
+            Author::insert($authors);
+        }
+
+
     }
 }
